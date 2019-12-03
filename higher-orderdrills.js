@@ -58,3 +58,11 @@ hurricane("Apple St. and Fig Ave.");
 hurricane("Maple St. and Berry St.");
 flyingPikachu("Kanto and Johto");
 flyingPikachu("Galar and Sinnoh");
+
+let turtleSteps = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+turtleSteps.filter(([step1, step2]) => { return step1 >= 0 && step2 >= 0; });
+
+turtleSteps.map(([step1, step2]) => {return step1 + step2});
+
+turtleSteps.forEach(([step1, step2]) => console.log(`Movement #1: ${step1} steps Movement #2: ${step2} steps`));
