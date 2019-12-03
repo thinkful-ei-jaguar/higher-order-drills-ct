@@ -86,10 +86,10 @@ myArray.reduce(([word]) => {
 */
 
 myArray.reduce((accumulator, currentValue) => {
-    if (currentValue.legnth === 3) {
+    if (currentValue.length === 3) {
         return accumulator + " "; 
     }
     else {
         return accumulator + currentValue.substring(0, currentValue.length - 1) + currentValue[currentValue.length - 1 ].toUpperCase()
     }
-}); 
+}),""; 
