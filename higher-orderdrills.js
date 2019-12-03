@@ -69,6 +69,8 @@ turtleSteps.forEach(([step1, step2]) => console.log(`Movement #1: ${step1} steps
 
 let myArray = ["noggin", "oreo", "the", "moon", "time", "tele", "steed", "his", "tent", "apollo", "her", "lives", "though", "shoo", "tofu", "budapest"];
 
+/* FIRST ATTEMPT AT "REDUCE PROBLEM"
+
 myArray.reduce(([word]) => {
   let initialValue = "";
   for (i = 0; i < myArray.length; i++) {
@@ -79,4 +81,15 @@ myArray.reduce(([word]) => {
         return initialValue.toUpperCase();
     }
   }
+}); 
+
+*/
+
+myArray.reduce((accumulator, currentValue) => {
+    if (currentValue.legnth === 3) {
+        return accumulator + " "; 
+    }
+    else {
+        return currentValue.toUpperCase()
+    }
 }); 
