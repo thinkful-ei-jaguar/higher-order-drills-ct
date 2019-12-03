@@ -90,6 +90,6 @@ myArray.reduce((accumulator, currentValue) => {
         return accumulator + " "; 
     }
     else {
-        return currentValue.toUpperCase()
+        return accumulator + currentValue.substring(0, currentValue.length - 1) + currentValue[currentValue.length - 1 ].toUpperCase()
     }
 }); 
