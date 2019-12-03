@@ -66,3 +66,17 @@ turtleSteps.filter(([step1, step2]) => { return step1 >= 0 && step2 >= 0; });
 turtleSteps.map(([step1, step2]) => {return step1 + step2});
 
 turtleSteps.forEach(([step1, step2]) => console.log(`Movement #1: ${step1} steps Movement #2: ${step2} steps`));
+
+let myArray = ["noggin", "oreo", "the", "moon", "time", "tele", "steed", "his", "tent", "apollo", "her", "lives", "though", "shoo", "tofu", "budapest"];
+
+myArray.reduce(([word]) => {
+  let initialValue = "";
+  for (i = 0; i < myArray.length; i++) {
+   if (word.length[i] === 3) {
+        return " ";
+    } 
+    else {
+        return initialValue.toUpperCase();
+    }
+  }
+}); 
